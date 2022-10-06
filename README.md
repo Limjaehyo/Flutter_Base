@@ -1,4 +1,4 @@
-#  Staika
+#  BaseCor
 ![clean arch](https://github.com/MahmoudElbokl/flutter_clean_arch_sample_demo/raw/master/flutter_clean_arch.png " Call Flow")
 
 ## 프로젝트 빌드 옵션
@@ -62,16 +62,6 @@ flutter pub run intl_utils:generate
     flutter pub run intl_utils:localizely_upload_main --api-token [api-key]
     ```
 
-Localizely 어드민에서 언어파일을 업데이트 했다면 아래 명령어로 .arb파일을 받아올 수 있다.
-
-
-- 명령어와 옵션
-    ```bash
-    flutter pub run intl_utils:localizely_download [--project-id <PROJECT_ID> --api-token <API_TOKEN> --arb-dir <ARB_DIR> --download-empty-as <DOWNLOAD_EMPTY_AS> --download-include-tags <DOWNLOAD_INCLUDE_TAGS> --download-exclude-tags <DOWNLOAD_EXCLUDE_TAGS> --branch <BRANCH>]
-    ```
--  업로드 할 때와 마찬가지로 사전에 정의되었기 때문에 아래 명령어로만 실행해도 다운로드가 된다.
-    ```bash
-    flutter pub run intl_utils:localizely_download --api-token [api-key]
     ```
 
 ### flutter_flavorizr

@@ -1,3 +1,4 @@
+
 #  BaseCore
 ![clean arch](https://github.com/MahmoudElbokl/flutter_clean_arch_sample_demo/raw/master/flutter_clean_arch.png " Call Flow")
 
@@ -38,8 +39,6 @@ flutter pub run build_runner build
 또는 
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
-
-
 ### flutter_flavorizr
 
 #### 안드로이드 스튜디오 기준 설정법

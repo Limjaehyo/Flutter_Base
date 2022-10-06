@@ -39,30 +39,6 @@ flutter pub run build_runner build
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
 
-### Localizely
-필요 시 [Localizely 문서](https://localizely.com/what-is-localizely/)를 참고
-
-안드로이드 스튜디오 / 인텔리J, vscode는 Flutter Intl (개발자: Localizely)이라는 플러그인을 설치하면 새로운 .arb파일이 업데이트되면 새로 l10n폴더를 생성해준다.
-
-위 플러그인을 사용하지 않는 경우 intl_utils패키지가 설치되어 있다면 아래 명령어로 코드를 생성할 수 있다.
-
-```bash
-flutter pub run intl_utils:generate
-```
-
-만약에 로컬에서 .arb파일을 수정했다면 아래와 같은 명령어로 localizely 계정에 파일을 업로드 할 수 있다.
-
-
-- 명령어와 옵션
-    ```bash
-    flutter pub run intl_utils:localizely_upload_main [--project-id <PROJECT_ID> --api-token <API_TOKEN> --arb-dir <ARB_DIR> --main-locale <MAIN_LOCALE> --branch <BRANCH> --[no-]upload-overwrite --[no-]upload-as-reviewed] --upload-tag-added <UPLOAD_TAG_ADDED> --upload-tag-updated <UPLOAD_TAG_UPDATED> --upload-tag-removed <UPLOAD_TAG_REMOVED>
-    ```
-- pubspec.yaml과 .localizely/credentials.yaml 파일에 프로젝트 id와 api token값이 정의 되어 있다. credential.yaml 파일에 있는 api token 값을 복사해서 아래 명령어를 실행하면 업로드 된다. 
-    ```bash
-    flutter pub run intl_utils:localizely_upload_main --api-token [api-key]
-    ```
-
-    ```
 
 ### flutter_flavorizr
 
